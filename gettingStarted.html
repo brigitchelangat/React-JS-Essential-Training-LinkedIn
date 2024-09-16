@@ -8,12 +8,13 @@
     <!-- Adding ReactDOM and React-->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 <body>
     <div id="root"></div>
     <h1>Getting started with React</h1>
     
-    <script type="text/javascript">
+    <script type="text/babel">
         //A lot of createElement() makes the code Hectic
         let ul = React.createElement(
                 "ul",
@@ -33,6 +34,7 @@
           </ul>
            ,document.getElementById("root")
         );
+        
 
     </script>
 </body>
