@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +11,21 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
+
 <body>
     <div id="root"></div>
     <h1>Getting started with React</h1>
-    
+
     <script type="text/babel">
         //A lot of createElement() makes the code Hectic
         let ul = React.createElement(
-                "ul",
-                {style: {color:'blue'}}
-                ,
-                React.createElement("li",null,"Monday"),
-                React.createElement("li",null,"Tuesday"),
-                React.createElement("li",null,"Wednesday")
-            );
+            "ul",
+            { style: { color: 'blue' } }
+            ,
+            React.createElement("li", null, "Monday"),
+            React.createElement("li", null, "Tuesday"),
+            React.createElement("li", null, "Wednesday")
+        );
         let name = "Brigit";
         // Use of JSX i.e JavaScript as XML 
         /*ReactDOM.render(
@@ -37,15 +39,26 @@
            ,document.getElementById("root")
         );
         */
-       //React funstion Components
+        //React funstion Components
         function Car() {
             return <h2>I am a Car!</h2>;
         }
+        function Garage() {
+            return (
+              
+                    <h1>Who lives in my Garage?</h1>
+               
+            );
+        }
 
         ReactDOM.render(
-          <Car />
-           ,document.getElementById("root"));
+            <div>
+             <Car />
+             <Garage />
+            </div>
+            , document.getElementById("root"));
 
     </script>
 </body>
+
 </html>
