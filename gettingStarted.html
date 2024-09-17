@@ -48,7 +48,7 @@
                     <section>
                         <h1>Who lives in my Garage?</h1>
                         <ul>
-                            {cars.map((car) => (<li>{car}</li>))}
+                            {cars.map((car , i) => (<li key = {i}>{car}</li>))}
                         </ul>
                     </section>
                
