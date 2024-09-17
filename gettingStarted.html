@@ -45,11 +45,22 @@
         }
         function Garage() {
             return (
-              
-                    <h1>Who lives in my Garage?</h1>
+                    <section>
+                        <h1>Who lives in my Garage?</h1>
+                        <ul>
+                            {cars.map((car) => (<li>{car}</li>))}
+                        </ul>
+                    </section>
                
             );
         }
+
+        //Working with lists
+        const cars = [
+            "Mazda",
+            "Toyota",
+            "Mercedes"
+        ]
 
         ReactDOM.render(
             <div>
